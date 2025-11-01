@@ -1,4 +1,4 @@
-# ## Chapter 6: Two-Qubit Gates
+## Chapter 6: Two-Qubit Gates
 
 ### 6.1 CNOT (Controlled-NOT) Gate
 
@@ -232,5 +232,3 @@ Final state:
 ```
 
 ---
-
-[← Previous](./05_*.md) | [Next →](./07_*.md)

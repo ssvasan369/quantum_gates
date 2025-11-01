@@ -1,4 +1,4 @@
-# ## Chapter 3: The Qubit - Mathematical Foundation
+## Chapter 3: The Qubit - Mathematical Foundation
 
 ### 3.1 Computational Basis
 
@@ -113,5 +113,3 @@ These are different physical states!
 ```
 
 ---
-
-[← Previous](./02_*.md) | [Next →](./04_*.md)

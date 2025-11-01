@@ -1,4 +1,4 @@
-# ## Chapter 1: Mathematical Prerequisites
+## Chapter 1: Mathematical Prerequisites
 
 ### 1.1 Complex Numbers
 
@@ -132,4 +132,4 @@ If A = [1+i   2]    then A† = [1-i    3-i]
          [β]             [βγ*  βδ*]
 ```
 
---- | [Next →](./02_*.md)
+---

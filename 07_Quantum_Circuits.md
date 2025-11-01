@@ -1,4 +1,4 @@
-# ## Chapter 7: Quantum Circuits
+## Chapter 7: Quantum Circuits
 
 ### 7.1 Circuit Notation
 
@@ -226,5 +226,3 @@ The circuit does nothing!
 ```
 
 ---
-
-[← Previous](./06_*.md) | [Next →](./08_*.md)

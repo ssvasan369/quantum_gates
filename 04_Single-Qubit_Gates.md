@@ -1,4 +1,4 @@
-# ## Chapter 4: Single-Qubit Gates
+## Chapter 4: Single-Qubit Gates
 
 ### 4.1 Quantum Gates as Unitary Operators
 
@@ -257,5 +257,3 @@ Ry(1.855)|0⟩ = [cos(53.13°)][1]   [0.6]   [3/5]
 ```
 
 ---
-
-[← Previous](./03_*.md) | [Next →](./05_*.md)

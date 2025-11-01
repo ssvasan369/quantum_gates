@@ -1,4 +1,4 @@
-# ## Chapter 8: Measurement Theory
+## Chapter 8: Measurement Theory
 
 ### 8.1 Computational Basis Measurement
 
@@ -138,5 +138,3 @@ Average = (+1)·(1/2) + (-1)·(1/2) = 0 ✓
 ```
 
 ---
-
-[← Previous](./07_*.md) | [Next →](./09_*.md)

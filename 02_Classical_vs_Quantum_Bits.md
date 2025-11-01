@@ -1,4 +1,4 @@
-# ## Chapter 2: Classical vs Quantum Bits
+## Chapter 2: Classical vs Quantum Bits
 
 ### 2.1 Classical Bit
 
@@ -57,5 +57,3 @@ These are different quantum states!
 ```
 
 ---
-
-[← Previous](./01_*.md) | [Next →](./03_*.md)

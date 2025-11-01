@@ -1,4 +1,4 @@
-# ## Chapter 5: Multi-Qubit Systems
+## Chapter 5: Multi-Qubit Systems
 
 ### 5.1 Two-Qubit Systems
 
@@ -205,5 +205,3 @@ General form (8 dimensions):
 ```
 
 ---
-
-[← Previous](./04_*.md) | [Next →](./06_*.md)

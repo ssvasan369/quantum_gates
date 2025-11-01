@@ -1,4 +1,4 @@
-# ## Chapter 9: Entanglement
+## Chapter 9: Entanglement
 
 ### 9.1 What is Entanglement?
 
@@ -95,4 +95,108 @@ Schmidt rank = 2 → Entangled
 
 **Bell state measurements**:
 
-[← Previous](./08_*.md)
+**Example**: |Φ⁺⟩ = (1/√2)(|00⟩ + |11⟩)
+
+Measure first qubit:
+- Get 0 → second qubit must be 0
+- Get 1 → second qubit must be 1
+- **Perfect correlation!**
+
+But:
+- Before measurement: both qubits indefinite
+- Measurement outcome: random (50/50)
+- After first measurement: second qubit determined
+
+**Example with numbers**:
+```
+Initial: |Φ⁺⟩ = (1/√2)(|00⟩ + |11⟩)
+
+Alice measures her qubit:
+- P(0) = 1/2, state becomes |00⟩
+- P(1) = 1/2, state becomes |11⟩
+
+Bob measures his qubit:
+- If Alice got 0: Bob gets 0 with P=1
+- If Alice got 1: Bob gets 1 with P=1
+
+Results are correlated, but neither can control their outcome!
+```
+
+### 9.5 No-Cloning Theorem
+
+**Statement**: Cannot create identical copy of unknown quantum state.
+
+**Proof sketch**:
+Suppose cloning operation U exists:
+```
+U(|ψ⟩ ⊗ |0⟩) = |ψ⟩ ⊗ |ψ⟩
+```
+
+For |0⟩:
+```
+U(|0⟩ ⊗ |0⟩) = |0⟩ ⊗ |0⟩
+```
+
+For |1⟩:
+```
+U(|1⟩ ⊗ |0⟩) = |1⟩ ⊗ |1⟩
+```
+
+For |+⟩ = (1/√2)(|0⟩ + |1⟩):
+```
+U(|+⟩ ⊗ |0⟩) = U[(1/√2)(|0⟩ + |1⟩) ⊗ |0⟩]
+              = (1/√2)[U(|0⟩⊗|0⟩) + U(|1⟩⊗|0⟩)]  (linearity)
+              = (1/√2)[|0⟩⊗|0⟩ + |1⟩⊗|1⟩]
+```
+
+But we wanted:
+```
+|+⟩ ⊗ |+⟩ = (1/2)(|00⟩ + |01⟩ + |10⟩ + |11⟩)
+```
+
+These are different! Contradiction. ✗
+
+### 9.6 GHZ State (3-qubit entanglement)
+
+```
+|GHZ⟩ = (1/√2)(|000⟩ + |111⟩)
+```
+
+**Creating GHZ state**:
+```
+Circuit:
+q₀: ──H──●────●──
+         │    │
+q₁: ─────⊕────┼──
+              │
+q₂: ──────────⊕──
+
+Steps:
+1. |000⟩
+2. (H⊗I⊗I)|000⟩ = (1/√2)(|000⟩ + |100⟩)
+3. CNOT₀₁: (1/√2)(|000⟩ + |110⟩)
+4. CNOT₀₂: (1/√2)(|000⟩ + |111⟩) = |GHZ⟩
+```
+
+**Properties**:
+- Measure q₀ as 0 → q₁ and q₂ both 0
+- Measure q₀ as 1 → q₁ and q₂ both 1
+- Three-way correlation
+
+### 9.7 W State (Different type of 3-qubit entanglement)
+
+```
+|W⟩ = (1/√3)(|001⟩ + |010⟩ + |100⟩)
+```
+
+**Properties**:
+- More robust to qubit loss than GHZ
+- If one qubit lost, remaining two still entangled
+
+**Difference from GHZ**:
+```
+Trace out one qubit from |GHZ⟩ → separable state
+Trace out one qubit from |W⟩ → still entangled!
+```
+
+---
